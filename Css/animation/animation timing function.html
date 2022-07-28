@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            animation-name: animate1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+        .div2{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            animation-name: animate1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+        .div3{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation-name: animate1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        .div4{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            animation-name: animate1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes animate1{
+            0%{
+                transform: translate(0px);
+            }
+            100%{
+                transform: translateX(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--animation time function-->
+    <!--ease-in,-->
+    <div class="div1">ease-in</div>
+    <div class="div2">ease-out</div>
+    <div class="div3">ease-in-out</div>
+    <div class="div4">linear</div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 60px;
+            background-color: green;
+            margin: 0;
+            padding: 0;
+        }
+        .div2 > h2{
+            background-color: blueviolet;
+        }
+        .divsub > h2{
+            background-color: aqua;
+        }
+
+        .divDesc h2{
+            background-color: yellowgreen;
+        }
+        .exampleDesc .subExample h2{
+            background-color: brown;
+        }
+
+        .groupSelector .heading1, .heading2, .heading3{
+            background-color: rgb(247, 6, 46);
+        }
+    </style>
+</head>
+<body>
+    <!--selector-->
+    <!--1.universal selector: it applys to all inside body-->
+    <div class="div1">
+        <h2>hello universal</h2>
+        <p>HELLO WORLD</p>
+    </div>
+    <h3>heading3</h3>
+    <p>hello world</p>
+
+    <!--2. child selector:">",selects only their child-->
+    <div class="div2">
+        <h2 class="heading2">heading</h2>
+        <div class="divsub">
+            <h2>hello heading2</h2>
+        </div>
+    </div>
+
+    <!--3. descendant selector-->
+    <div class="divDesc">
+        <h2>hello world</h2>
+        <div class="divSubDesc">
+            <h2>hello descendant selector</h2>
+        </div>
+        <h2>kshsdjk</h2>
+    </div>
+    <div class="exampleDesc">
+        <div class="subExample">
+            <h2>hello world</h2>
+        </div>
+    </div>
+
+    <!--group selector-->
+    <div class="groupSelector">
+        <h1 class="heading1">group 1</h1>
+        <h2 class="heading2">group 2</h2>
+        <h3 class="heading3">group 3</h3>
+    </div>
+
+    <!--create one division, inside manin division  
+    create 3 sub division the height of the image 
+    should be different-->
+</body>
+</html>

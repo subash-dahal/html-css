@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos</title>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        video{
+            /*vh=viewport height,100vh=100%*/
+            height: 100%;
+
+            /*vw=viewport width, 10vw=100%*/
+            width: 100%;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            top: 20px;
+            width: 100%;
+        }
+        .nav-list{
+            display: flex;
+            justify-content: center;
+            margin-top: 2px;
+        }
+        .nav-list li{
+            list-style: none;
+            margin: 10px 20px;
+        }
+        .nav-list li a{
+            text-decoration: none;
+            color: white;
+        }
+        .logo{
+        margin: 0 0 0 50px;
+    }
+    .last-icon{
+        margin: 9px 30px 0 0;
+    }
+    .bars{
+        color: white;
+        font-size: 20px;
+    }
+    .iconify{
+        color: white;
+        margin: 0 10px 0 10px;
+
+    }
+    .icons{
+        margin-top: 12px;
+    }
+    li:first-child a {
+        text-decoration: underline;
+        text-underline-offset: 8px;
+    }
+    ul{
+        display: none;
+        position: absolute;
+        top: 18px;
+        left: 0;
+        right: 10px;
+        list-style-type: none;
+        height: 150px;
+        width: 300px;
+    }
+    ul>li{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .sub{
+        position: relative;
+    }
+    .sub:hover ul{
+        display: block;
+        background-color:green;
+
+    }
+        
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <div class="logo">
+        <img src="./logo.png" alt="">
+    </div>
+    <div class="nav-list">
+        <li><a href="">Home</a></li>
+        <li><a href="">Artist Reel</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Our work</a></li>
+        <li><a href="">Career</a></li>
+        <li class="sub">
+            <a href="">About</a>
+            <ul class="">
+                <li>Crew</li>
+                <li>our patners</li>
+                <li>film rebate</li>
+            </ul>
+            </li>
+        <li><a href="">News</a></li>
+        <li><a href="">Contact</a></li>
+    </div>
+    <div class="icons">
+        <span class="iconify" data-icon="icon-park:twitter"></span>
+        <span class="iconify" data-icon="bxl:facebook-circle"></span>
+        <span class="iconify" data-icon="akar-icons:linkedin-fill"></span>
+        <span class="iconify" data-icon="bxl:youtube"></span>
+        <span class="iconify" data-icon="akar-icons:instagram-fill"></span>
+    </div>
+    <div class="last-icon">
+        <span class="iconify bars" data-icon="bi:list"></span>
+    </div>
+</div>
+
+    <video playsinline autoplay loop muted>
+    <source src="./sophoria.mkv" type="video/mp4">
+    </video>
+</body>
+</html>

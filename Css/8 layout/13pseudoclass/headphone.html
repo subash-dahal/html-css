@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphone</title>
+    <style>
+        .productCart{
+            background-color: black;
+            height: 300px;
+            width: 700px;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            border-radius: 20px ;
+        }
+        .right{
+            color: white;
+            margin: 0px 10px;
+        }
+        .left-bg{
+            height: 150px;
+            width: 240px;
+            border-radius: 20px;
+            background-color: white;
+            padding: 10px;
+            margin: 20px 0px 0px 20px;
+        }
+        img{
+            height: 150px;
+            margin: 2px 9px;
+            display: block;
+            border-radius: 20px;
+        }
+        .right-info{
+            margin-top: 10px;
+            margin-left: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            background-color: red;
+            color: white;
+            border-radius: 20px;
+            padding: 5px 20px; 
+
+        }
+    </style>
+</head>
+<body>
+    <div class="productCart">
+        <div class="left">
+        <div class="left-bg">
+            <img src="data:image/webp;base64,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"
+             alt="">
+        </div>
+        </div>
+        <div class="right">
+            <h2>headphone</h2>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam rerum beatae quae et maiores saepe nam totam animi exercitationem adipisci. Pariatur, excepturi voluptates! Nobis voluptas unde dolore ratione officiis natus.
+            </p>
+            <div class="right-info">
+                <p>Rs.4500</p>
+                <button>Buy now</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After and before</title>
+    <style>
+        .productCard{
+            height: 400px;
+            width: 400px;
+            margin: auto;
+            box-shadow: 10px 10px 10px gray,-10px -10px 10px gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .productCard::after{
+            content:'20% off' ;
+            display: block;
+            padding: 20px;
+            width: 500px;
+            background-color: green;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="productCard">
+        <img src="data:image/webp;base64,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" alt="">
+        <h4>product name</h4>
+        <h6>Rs.4500</h6>
+    </div>
+</body>
+</html>

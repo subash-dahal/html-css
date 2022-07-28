@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+    <style>
+        li:first-child{
+            background-color: green;
+        }
+
+        li:last-child{
+            background-color: red;
+        }
+        li:nth-child(even){
+            background-color: blue;
+        }
+        li:nth-child(3):hover{
+            background-color: yellow;
+        }
+        h1::after{
+            content: ' Hello universe';
+        }
+        h1::before{
+            content: 'Hello multiverse ';
+        }
+        img{
+            display: block;
+            margin: 100px auto;
+            height: 300px;
+            position: relative;
+            z-index: 1;
+        }
+        .div1::before{
+            content:'';
+            display: block;
+            height: 400px;
+            width: 400px;
+            background-color: green;
+            border-radius: 50%;
+            position: absolute;
+            left: 200px;
+        }
+
+        .div1::after{
+            content:'';
+            display: block;
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            left: 250px;
+            top: 350px;
+        }
+
+
+        /*before after*/
+    </style>
+
+    
+</head>
+<body>
+    <!--pseudo classes= :-->
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Service</li>
+        <li>Gallary</li>
+        <li>Map</li>
+
+    </ul>
+
+    <h1>Hello World</h1>
+
+    <div class="div1">
+        <img src="data:image/webp;base64,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" 
+        alt="">
+
+    </div>
+</body>
+</html>
